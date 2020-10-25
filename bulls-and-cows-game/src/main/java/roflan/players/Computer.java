@@ -8,11 +8,6 @@ public class Computer {
     private int[] computerNumber;
     private int computerNumberLength;
 
-//    public Computer(int gameDifficulty){
-//        setComputerNumberLength(gameDifficulty);
-//        generateNumber();
-//    }
-
     public void generateNumber(){
         Random random = new Random();
         int[] computerNumber = new int[computerNumberLength];
