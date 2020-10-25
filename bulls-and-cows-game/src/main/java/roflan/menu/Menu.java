@@ -35,7 +35,7 @@ public class Menu {
             while (!isWin){
                 user.setUserNumberLength(numberLength);
                 user.userNumberInput();
-                countGuessedAndWrongDigits(computer, user);
+                countDigitsInSameAndDifferentPositions(computer, user);
                 if (digitsInSamePositions == numberLength){
                     isWin = true;
                     System.out.println("You win!");
@@ -65,7 +65,7 @@ public class Menu {
 
     }
 
-    private void countGuessedAndWrongDigits(Computer computer, User user){
+    private void countDigitsInSameAndDifferentPositions(Computer computer, User user){
         int numberLength = computer.getComputerNumberLength();
         int[] computerNumber = computer.getComputerNumber();
         int[] userNumber = user.getUserNumber();
